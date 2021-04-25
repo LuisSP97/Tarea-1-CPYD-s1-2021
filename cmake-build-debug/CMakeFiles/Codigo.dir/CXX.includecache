@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/Split.h
+iostream
+-
+vector
+-
+string
+-
+
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp
+estudiante.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
+
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
+string
+-
+utility
+-
+
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp
+iostream
+-
+sstream
+-
+fstream
+-
+vector
+-
+string
+-
+estudiante.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
+Split.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/Split.h
+
