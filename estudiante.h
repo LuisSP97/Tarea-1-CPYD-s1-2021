@@ -13,7 +13,7 @@ class estudiante {
 
 public:
     //Constructor
-    estudiante(int id, string nombre, float prom_leng, float prom_ing, float prom_mat, float prom_cien, float prom_hist, float prom_tecn, float prom_arte, float prom_edfis) {}
+    estudiante(int id, string nombre, float prom_leng, float prom_ing, float prom_mat, float prom_cien, float prom_hist, float prom_tecn, float prom_arte, float prom_edfis, float prom_gral) {}
     //Metodos set
     void setId(int num){id = num;}
     void setNombre(string name){nombre = name;}
@@ -25,7 +25,7 @@ public:
     void setProm_tecn(float tecn){prom_tecn = tecn;}
     void setProm_arte(float arte){prom_arte = arte;}
     void setProm_edfis(float edfis){prom_edfis = edfis;}
-    //void setProm_gral(float gral){prom_gral = gral;}
+    void setProm_gral(float gral){prom_gral = gral;}
     //Metodos get
     const int getId(){return id;}
     const string getNombre(){return nombre;}
@@ -37,7 +37,7 @@ public:
     const float getProm_tecn(){return prom_tecn;}
     const float getProm_arte(){return prom_arte;}
     const float getProm_edfis(){return prom_edfis;}
-    //const float getProm_gral(){return prom_gral;}
+    const float getProm_gral(){return prom_gral;}
     //Funciones
 private:
     int id;
@@ -50,7 +50,7 @@ private:
     float prom_tecn;
     float prom_arte;
     float prom_edfis;
-    //float prom_gral;
+    float prom_gral;
 };
 
 

@@ -4,7 +4,8 @@
 CMakeFiles/Codigo.dir/estudiante.cpp.o: ../estudiante.cpp
 CMakeFiles/Codigo.dir/estudiante.cpp.o: ../estudiante.h
 
-CMakeFiles/Codigo.dir/main.cpp.o: ../Split.h
+CMakeFiles/Codigo.dir/main.cpp.o: ../estudiante.cpp
 CMakeFiles/Codigo.dir/main.cpp.o: ../estudiante.h
+CMakeFiles/Codigo.dir/main.cpp.o: ../funciones.h
 CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp
 

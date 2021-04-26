@@ -82,13 +82,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/Split.h">
-			<Option target="Codigo"/>
-		</Unit>
 		<Unit filename="/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp">
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h">
+			<Option target="Codigo"/>
+		</Unit>
+		<Unit filename="/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/funciones.h">
 			<Option target="Codigo"/>
 		</Unit>
 		<Unit filename="/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp">

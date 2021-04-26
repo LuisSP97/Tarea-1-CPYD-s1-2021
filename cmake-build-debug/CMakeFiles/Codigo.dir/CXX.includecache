@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/Split.h
-iostream
--
-vector
--
-string
--
-algorithm
--
-
 /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp
 estudiante.h
 /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
@@ -26,7 +16,7 @@ string
 utility
 -
 
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/funciones.h
 iostream
 -
 sstream
@@ -37,8 +27,20 @@ vector
 -
 string
 -
+algorithm
+-
 estudiante.h
 /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
-Split.h
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/Split.h
+estudiante.cpp
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp
+
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp
+iostream
+-
+vector
+-
+estudiante.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
+funciones.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/funciones.h
 
