@@ -6,25 +6,27 @@
 
 #IncludeRegexTransform: 
 
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/Split.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/Split.h
 iostream
 -
 vector
 -
 string
 -
+algorithm
+-
 
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp
 estudiante.h
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
 
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
 string
 -
 utility
 -
 
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp
 iostream
 -
 sstream
@@ -36,7 +38,7 @@ vector
 string
 -
 estudiante.h
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
 Split.h
-/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/Split.h
+/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/Split.h
 
