@@ -8,10 +8,14 @@ int main() {
     vector<estudiante> lista;
     lista = procesar_archivo(lista);
     lista = ordenar_mejores(lista);
-    cout << lista[0].getProm_arte() << endl;
+    //AQUI: GENERAR ARCHIVO
     limpiar(lista);
     lista = ordenar_artistico(lista);
-    cout << lista[0].getProm_arte();
-    ordenar_humanismo(lista);
+    //AQUI: GENERAR ARCHIVO
+    limpiar(lista);
+    lista = ordenar_humanismo(lista);
+    limpiar(lista);
+    //AQUI: GENERAR ARCHIVO
+    lista = ordenar_tecnicos(lista);
     return 0;
 }

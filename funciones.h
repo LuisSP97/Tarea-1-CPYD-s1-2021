@@ -111,8 +111,8 @@ vector<estudiante> ordenar_artistico(vector<estudiante> lista){
 
 vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
     vector<estudiante> aux;
-    for(int i = 200; i < lista.size(); i++){
-        for(int j = 200; j < lista.size(); j++){
+    for(int i = 0; i < lista.size(); i++){
+        for(int j = 0; j < lista.size(); j++){
             float prom_i = (lista[i].getProm_leng()+lista[i].getProm_hist())/2;
             float prom_j = (lista[j].getProm_leng()+lista[j].getProm_hist())/2;
             if(prom_i > prom_j){
@@ -123,9 +123,23 @@ vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
             }
         }
     }
-    /*for(int k = 200; k < lista.size(); k++){
-        cout << lista[k].getProm_leng() << "--" << lista[k].getProm_hist() << endl;
-    }*/
+    return lista;
+}
+
+vector<estudiante> ordenar_tecnicos(vector<estudiante> lista){
+    vector<estudiante> aux;
+    for(int i = 0; i < lista.size(); i++){
+        for(int j = 0; j < lista.size(); j++){
+            float prom_i = (lista[i].getProm_mat()+lista[i].getProm_cien()+lista[i].getProm_tecn())/3;
+            float prom_j = (lista[j].getProm_mat()+lista[j].getProm_cien()+lista[j].getProm_tecn())/3;
+            if(prom_i > prom_j){
+                aux.push_back(lista[i]);
+                lista[i] = lista[j];
+                lista[j] = aux[0];
+                aux.pop_back();
+            }
+        }
+    }
     return lista;
 }
 
