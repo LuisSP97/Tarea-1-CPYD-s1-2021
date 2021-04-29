@@ -3,4 +3,4 @@ project(Codigo)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(Codigo main.cpp estudiante.cpp estudiante.h Split.h)
+add_executable(Codigo main.cpp estudiante.cpp estudiante.h funciones.h)
