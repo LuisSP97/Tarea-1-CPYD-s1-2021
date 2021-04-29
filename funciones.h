@@ -77,11 +77,11 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista){
     return lista;
 }
 
-vector<estudiante> ordenar(vector<estudiante> lista){
+vector<estudiante> ordenar_mejores(vector<estudiante> lista){
     vector<estudiante> aux;
     for(int i = 0; i < lista.size(); i++){
-        for(int j = 1; j < lista.size(); j++){
-            if(lista[i].getProm_gral() < lista[j].getProm_gral()){
+        for(int j = 0; j < lista.size(); j++){
+            if(lista[i].getProm_gral() > lista[j].getProm_gral()){
                 aux.push_back(lista[i]);
                 lista[i] = lista[j];
                 lista[j] = aux[0];
@@ -89,11 +89,49 @@ vector<estudiante> ordenar(vector<estudiante> lista){
             }
         }
     }
-//    for(int k = 0; lista.size(); k++){
-//        cout << lista[k].getProm_gral() << endl;
-//    }
-    cout << lista[1].getProm_gral();
+    return lista;
 };
 
+vector<estudiante> ordenar_artistico(vector<estudiante> lista){
+    vector<estudiante> aux;
+    for(int i = 0; i < lista.size(); i++) {
+        for (int j = 0; j < lista.size(); j++) {
+            float prom_i = (lista[i].getProm_arte() + lista[i].getProm_edfis()) / 2;
+            float prom_j = (lista[j].getProm_arte() + lista[j].getProm_edfis()) / 2;
+            if (prom_i > prom_j) {
+                aux.push_back(lista[i]);
+                lista[i] = lista[j];
+                lista[j] = aux[0];
+                aux.pop_back();
+            }
+        }
+    }
+    return lista;
+}
+
+vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
+    vector<estudiante> aux;
+    for(int i = 200; i < lista.size(); i++){
+        for(int j = 200; j < lista.size(); j++){
+            float prom_i = (lista[i].getProm_leng()+lista[i].getProm_hist())/2;
+            float prom_j = (lista[j].getProm_leng()+lista[j].getProm_hist())/2;
+            if(prom_i > prom_j){
+                aux.push_back(lista[i]);
+                lista[i] = lista[j];
+                lista[j] = aux[0];
+                aux.pop_back();
+            }
+        }
+    }
+    /*for(int k = 200; k < lista.size(); k++){
+        cout << lista[k].getProm_leng() << "--" << lista[k].getProm_hist() << endl;
+    }*/
+    return lista;
+}
+
+vector<estudiante> limpiar(vector<estudiante> lista){
+    lista.erase(lista.begin(),lista.begin()+99);
+    return lista;
+}
 
 #endif //CODIGO_FUNCIONES_H

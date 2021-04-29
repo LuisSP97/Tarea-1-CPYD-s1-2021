@@ -1,1 +1,1 @@
-/Library/Developer/CommandLineTools/usr/bin/c++ -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/Codigo.dir/main.cpp.o CMakeFiles/Codigo.dir/estudiante.cpp.o -o Codigo 
+/usr/bin/c++ -g CMakeFiles/Codigo.dir/main.cpp.o CMakeFiles/Codigo.dir/estudiante.cpp.o -o Codigo 
