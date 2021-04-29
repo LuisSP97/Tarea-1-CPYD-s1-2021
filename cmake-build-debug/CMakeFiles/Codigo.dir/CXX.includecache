@@ -6,17 +6,17 @@
 
 #IncludeRegexTransform: 
 
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp
 estudiante.h
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
 
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
 string
 -
 utility
 -
 
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/funciones.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/funciones.h
 iostream
 -
 sstream
@@ -30,17 +30,17 @@ string
 algorithm
 -
 estudiante.h
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
 estudiante.cpp
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp
 
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp
 iostream
 -
 vector
 -
 estudiante.h
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.h
 funciones.h
-/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/funciones.h
+/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/funciones.h
 

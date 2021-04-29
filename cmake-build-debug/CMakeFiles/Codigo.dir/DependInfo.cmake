@@ -4,10 +4,10 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp" "/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles/Codigo.dir/estudiante.cpp.o"
-  "/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp" "/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles/Codigo.dir/main.cpp.o"
+  "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles/Codigo.dir/estudiante.cpp.o"
+  "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles/Codigo.dir/main.cpp.o"
   )
-set(CMAKE_CXX_COMPILER_ID "GNU")
+set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH

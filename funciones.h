@@ -77,5 +77,23 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista){
     return lista;
 }
 
+vector<estudiante> ordenar(vector<estudiante> lista){
+    vector<estudiante> aux;
+    for(int i = 0; i < lista.size(); i++){
+        for(int j = 1; j < lista.size(); j++){
+            if(lista[i].getProm_gral() < lista[j].getProm_gral()){
+                aux.push_back(lista[i]);
+                lista[i] = lista[j];
+                lista[j] = aux[0];
+                aux.pop_back();
+            }
+        }
+    }
+//    for(int k = 0; lista.size(); k++){
+//        cout << lista[k].getProm_gral() << endl;
+//    }
+    cout << lista[1].getProm_gral();
+};
+
 
 #endif //CODIGO_FUNCIONES_H

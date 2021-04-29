@@ -53,19 +53,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/luisro/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake
+CMAKE_COMMAND = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake
 
 # The command to remove a file.
-RM = /home/luisro/.local/share/JetBrains/Toolbox/apps/CLion/ch-0/211.7142.21/bin/cmake/linux/bin/cmake -E rm -f
+RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E rm -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/luisro/Documentos/Tarea-1-CPYD-s1-2021
+CMAKE_SOURCE_DIR = "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021"
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug
+CMAKE_BINARY_DIR = "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug"
 
 # Include any dependencies generated for this target.
 include CMakeFiles/Codigo.dir/depend.make
@@ -78,29 +78,29 @@ include CMakeFiles/Codigo.dir/flags.make
 
 CMakeFiles/Codigo.dir/main.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Codigo.dir/main.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Codigo.dir/main.cpp.o -c /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/Codigo.dir/main.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Codigo.dir/main.cpp.o -c "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp"
 
 CMakeFiles/Codigo.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/main.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp > CMakeFiles/Codigo.dir/main.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp" > CMakeFiles/Codigo.dir/main.cpp.i
 
 CMakeFiles/Codigo.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/main.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/main.cpp -o CMakeFiles/Codigo.dir/main.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/main.cpp" -o CMakeFiles/Codigo.dir/main.cpp.s
 
 CMakeFiles/Codigo.dir/estudiante.cpp.o: CMakeFiles/Codigo.dir/flags.make
 CMakeFiles/Codigo.dir/estudiante.cpp.o: ../estudiante.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Codigo.dir/estudiante.cpp.o"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Codigo.dir/estudiante.cpp.o -c /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir="/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Codigo.dir/estudiante.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/Codigo.dir/estudiante.cpp.o -c "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp"
 
 CMakeFiles/Codigo.dir/estudiante.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/Codigo.dir/estudiante.cpp.i"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp > CMakeFiles/Codigo.dir/estudiante.cpp.i
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp" > CMakeFiles/Codigo.dir/estudiante.cpp.i
 
 CMakeFiles/Codigo.dir/estudiante.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/Codigo.dir/estudiante.cpp.s"
-	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/estudiante.cpp -o CMakeFiles/Codigo.dir/estudiante.cpp.s
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/estudiante.cpp" -o CMakeFiles/Codigo.dir/estudiante.cpp.s
 
 # Object files for target Codigo
 Codigo_OBJECTS = \
@@ -114,7 +114,7 @@ Codigo: CMakeFiles/Codigo.dir/main.cpp.o
 Codigo: CMakeFiles/Codigo.dir/estudiante.cpp.o
 Codigo: CMakeFiles/Codigo.dir/build.make
 Codigo: CMakeFiles/Codigo.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Codigo"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir="/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles" --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX executable Codigo"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/Codigo.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -127,6 +127,6 @@ CMakeFiles/Codigo.dir/clean:
 .PHONY : CMakeFiles/Codigo.dir/clean
 
 CMakeFiles/Codigo.dir/depend:
-	cd /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/luisro/Documentos/Tarea-1-CPYD-s1-2021 /home/luisro/Documentos/Tarea-1-CPYD-s1-2021 /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug /home/luisro/Documentos/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles/Codigo.dir/DependInfo.cmake --color=$(COLOR)
+	cd "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug" && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug" "/Users/luisro97/Documents/Paralela/Tarea 1/Tarea-1-CPYD-s1-2021/cmake-build-debug/CMakeFiles/Codigo.dir/DependInfo.cmake" --color=$(COLOR)
 .PHONY : CMakeFiles/Codigo.dir/depend
 
