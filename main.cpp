@@ -5,17 +5,20 @@
 using namespace std;
 
 int main() {
+    string ruta;
     vector<estudiante> lista;
-    lista = procesar_archivo(lista);
+    lista = procesar_archivo(lista, ruta);
     lista = ordenar_mejores(lista);
-    //AQUI: GENERAR ARCHIVO
+    crear_mejores(lista);
     limpiar(lista);
     lista = ordenar_artistico(lista);
-    //AQUI: GENERAR ARCHIVO
+    crear_artistico(lista);
     limpiar(lista);
     lista = ordenar_humanismo(lista);
+    crear_humanismo(lista);
     limpiar(lista);
-    //AQUI: GENERAR ARCHIVO
     lista = ordenar_tecnicos(lista);
+    crear_tecnicos(lista);
+
     return 0;
 }

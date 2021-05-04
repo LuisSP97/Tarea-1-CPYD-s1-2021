@@ -1,0 +1,3 @@
+C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-release/CMakeFiles/Codigo.dir
+C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-release/CMakeFiles/edit_cache.dir
+C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-release/CMakeFiles/rebuild_cache.dir

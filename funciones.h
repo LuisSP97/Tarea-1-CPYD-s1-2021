@@ -21,7 +21,10 @@ float calc_gral(float leng, float ing, float mat, float cien, float hist, float 
 }
 
 vector<estudiante> procesar_archivo(vector<estudiante> lista){
-    ifstream archivo("estudiantes.csv");
+    string ruta;
+    cout<<"Ingrese la ruta donde se encuentra el archivo con los datos de los estudiantes:"<<endl;
+    cin >> ruta;
+    ifstream archivo(ruta);
     string linea;
     char delimitador = ';';
     if(archivo.is_open()){
@@ -148,4 +151,46 @@ vector<estudiante> limpiar(vector<estudiante> lista){
     return lista;
 }
 
+
+void crear_mejores(vector<estudiante> lista){
+    ofstream archivo;
+    archivo.open("maximos.csv");
+    for(int i = 0; i < 100 ; i++){
+        archivo<<lista[i].getId()<<";"<<lista[i].getNombre()<<";"<<lista[i].getProm_gral()<<endl;
+    }
+    archivo.close();
+}
+
+void crear_artistico(vector<estudiante> lista){
+    float prom;
+    ofstream archivo;
+    archivo.open("artistico.csv");
+    for(int i = 0; i < 100; i++){
+        prom = (lista[i].getProm_arte()+lista[i].getProm_edfis())/2;
+        archivo<<lista[i].getId()<<";"<<lista[i].getNombre()<<";"<<prom<<endl;
+    }
+    archivo.close();
+}
+
+void crear_humanismo(vector<estudiante> lista){
+    float prom;
+    ofstream archivo;
+    archivo.open("humanismo.csv");
+    for(int i = 0; i < 100; i++){
+        prom = (lista[i].getProm_leng()+lista[i].getProm_hist())/2;
+        archivo<<lista[i].getId()<<";"<<lista[i].getNombre()<<";"<<prom<<endl;
+    }
+    archivo.close();
+}
+
+void crear_tecnicos(vector<estudiante> lista){
+    float prom;
+    ofstream archivo;
+    archivo.open("tecnicos.csv");
+    for(int i = 0; i < 100; i++){
+        prom = (lista[i].getProm_mat()+lista[i].getProm_cien()+lista[i].getProm_tecn())/3;
+        archivo<<lista[i].getId()<<";"<<lista[i].getNombre()<<";"<<prom<<endl;
+    }
+    archivo.close();
+}
 #endif //CODIGO_FUNCIONES_H
