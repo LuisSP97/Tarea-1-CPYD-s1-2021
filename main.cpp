@@ -7,7 +7,7 @@ using namespace std;
 int main() {
     string ruta;
     vector<estudiante> lista;
-    lista = procesar_archivo(lista, ruta);
+    lista = procesar_archivo(lista);
     lista = ordenar_mejores(lista);
     crear_mejores(lista);
     limpiar(lista);
