@@ -1,4 +1,1 @@
-"C:\Program Files\JetBrains\CLion 2021.1.1\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - MinGW Makefiles" C:\Users\pika_\Documents\Proyectos\Tarea-1-CPYD-s1-2021
--- Configuring done
--- Generating done
--- Build files have been written to: C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-debug
+CMakeLists.txt not found in /home/luisro/Documentos/Tarea-1-CPYD-s1-2021 Select CMakeLists.txt

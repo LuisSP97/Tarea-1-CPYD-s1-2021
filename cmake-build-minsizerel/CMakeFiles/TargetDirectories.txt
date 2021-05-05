@@ -1,3 +1,0 @@
-C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-minsizerel/CMakeFiles/Codigo.dir
-C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-minsizerel/CMakeFiles/edit_cache.dir
-C:/Users/pika_/Documents/Proyectos/Tarea-1-CPYD-s1-2021/cmake-build-minsizerel/CMakeFiles/rebuild_cache.dir

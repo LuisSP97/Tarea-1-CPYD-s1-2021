@@ -20,10 +20,7 @@ float calc_gral(float leng, float ing, float mat, float cien, float hist, float 
     return ((leng + ing + mat + cien + hist + tecn + arte + edfis)/8);
 }
 
-vector<estudiante> procesar_archivo(vector<estudiante> lista){
-    string ruta;
-    cout<<"Ingrese la ruta donde se encuentra el archivo con los datos de los estudiantes:"<<endl;
-    cin >> ruta;
+vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
     ifstream archivo(ruta);
     string linea;
     char delimitador = ';';
@@ -37,6 +34,7 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista){
             int idV;
             string nombreV;
             float lengV, ingV, matV, cienV, histV, tecnV, arteV, edfisV, gral;
+            gral = 0;
             //
             getline(stream, id, delimitador);
             getline(stream, nombre, delimitador);
@@ -76,14 +74,15 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista){
         }
         archivo.close();
     }
-    else{cout<<"El archivo no se abrio!, deberia estar en la carpeta CMake :c";}
+    else{cout<<"¡Ups!, el archivo no se abrio :c";}
     return lista;
 }
 
 vector<estudiante> ordenar_mejores(vector<estudiante> lista){
     vector<estudiante> aux;
-    for(int i = 0; i < lista.size(); i++){
-        for(int j = 0; j < lista.size(); j++){
+    int tamano_lista = lista.size();
+    for(int i = 0; i < tamano_lista; i++){
+        for(int j = 0; j < tamano_lista; j++){
             if(lista[i].getProm_gral() > lista[j].getProm_gral()){
                 aux.push_back(lista[i]);
                 lista[i] = lista[j];
@@ -97,8 +96,9 @@ vector<estudiante> ordenar_mejores(vector<estudiante> lista){
 
 vector<estudiante> ordenar_artistico(vector<estudiante> lista){
     vector<estudiante> aux;
-    for(int i = 0; i < lista.size(); i++) {
-        for (int j = 0; j < lista.size(); j++) {
+    int tamano_lista = lista.size();
+    for(int i = 0; i < tamano_lista; i++) {
+        for (int j = 0; j < tamano_lista; j++) {
             float prom_i = (lista[i].getProm_arte() + lista[i].getProm_edfis()) / 2;
             float prom_j = (lista[j].getProm_arte() + lista[j].getProm_edfis()) / 2;
             if (prom_i > prom_j) {
@@ -114,8 +114,9 @@ vector<estudiante> ordenar_artistico(vector<estudiante> lista){
 
 vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
     vector<estudiante> aux;
-    for(int i = 0; i < lista.size(); i++){
-        for(int j = 0; j < lista.size(); j++){
+    int tamano_lista = lista.size();
+    for(int i = 0; i < tamano_lista; i++){
+        for(int j = 0; j < tamano_lista; j++){
             float prom_i = (lista[i].getProm_leng()+lista[i].getProm_hist())/2;
             float prom_j = (lista[j].getProm_leng()+lista[j].getProm_hist())/2;
             if(prom_i > prom_j){
@@ -131,8 +132,9 @@ vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
 
 vector<estudiante> ordenar_tecnicos(vector<estudiante> lista){
     vector<estudiante> aux;
-    for(int i = 0; i < lista.size(); i++){
-        for(int j = 0; j < lista.size(); j++){
+    int tamano_lista = lista.size();
+    for(int i = 0; i < tamano_lista; i++){
+        for(int j = 0; j < tamano_lista; j++){
             float prom_i = (lista[i].getProm_mat()+lista[i].getProm_cien()+lista[i].getProm_tecn())/3;
             float prom_j = (lista[j].getProm_mat()+lista[j].getProm_cien()+lista[j].getProm_tecn())/3;
             if(prom_i > prom_j){
