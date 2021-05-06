@@ -7,6 +7,7 @@
 #include <vector>
 #include <string>
 #include <algorithm>
+#include <stdlib.h>
 #include "estudiante.h"
 #include "estudiante.cpp"
 
@@ -77,7 +78,10 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
         }
         archivo.close();
     }
-    else{cout<<"¡Ups!, el archivo no se abrio :c";}
+    else{
+        cout<<"¡Ups!, no se encontro un archivo valido en la ruta indicada :c" << endl;
+        exit(0);
+        }
     return lista;
 }
 //Funcion que ordena los mejores promedios generales de mayor a menor.
