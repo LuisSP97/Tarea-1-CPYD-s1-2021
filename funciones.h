@@ -27,7 +27,8 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
     string linea;
     char delimitador = ';';
     if(archivo.is_open()){
-        cout<<"Se abrio el archivo con exito!"<<endl;
+        cout<<"Se abrio el archivo con exito!" << endl;
+        cout << "Procesando datos del archivo..." << endl;
         while(getline(archivo, linea)){
             stringstream stream(linea);
             //variables para almacenar datos del archivo
@@ -81,6 +82,7 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
 }
 //Funcion que ordena los mejores promedios generales de mayor a menor.
 vector<estudiante> ordenar_mejores(vector<estudiante> lista){
+    cout << "Ordenando los mejores promedios generales..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++){
@@ -98,6 +100,7 @@ vector<estudiante> ordenar_mejores(vector<estudiante> lista){
 
 //Funcion que ordena los mejores promedios Artisticos de mayor a menor.
 vector<estudiante> ordenar_artistico(vector<estudiante> lista){
+    cout << "Ordenando los mejores promedios artisticos..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++) {
@@ -117,6 +120,7 @@ vector<estudiante> ordenar_artistico(vector<estudiante> lista){
 
 //Funcion que ordena los mejores promedios Humanistas de mayor a menor.
 vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
+    cout << "Ordenando los mejores promedios humanistas..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++){
@@ -136,6 +140,7 @@ vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
 
 //Funcion que ordena los mejores promedios Tecnicos de mayor a menor.
 vector<estudiante> ordenar_tecnicos(vector<estudiante> lista){
+    cout << "Ordenando los mejores promedios tecnicos..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++){
