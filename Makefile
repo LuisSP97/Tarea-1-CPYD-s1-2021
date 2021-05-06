@@ -5,4 +5,4 @@ funciones.o: funciones.h
 	g++ -Wall -g3 -c funciones.h
 	
 main: main.cpp funciones.o
-	g++ -Wall -g3 -o main main.cpp
+	g++ -Wall -g3 -o main main.cpp -lm
