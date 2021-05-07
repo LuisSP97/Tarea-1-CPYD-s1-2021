@@ -178,6 +178,21 @@ string limpiar_ruta(string ruta){
     return ruta;
 }
 
+//Funcion para comprobar que el formato del archivo sea "csv".
+bool validar_formato(string ruta, bool isCSV){
+    int tamano = ruta.size()-1;
+    int aux = ruta.size()-4;
+    string formato;
+    for(int i = tamano; i > aux; i--){
+        formato.push_back(ruta[i]);
+        ruta.pop_back();
+    }
+    if(formato == "vsc"){
+        return true;
+    }
+    return false;
+}
+
 //Funcion para generar el archivo con los 100 mejores promedios generales.
 void crear_mejores(vector<estudiante> lista, string ruta){
     ofstream archivo;
