@@ -7,7 +7,6 @@
 #include <vector>
 #include <string>
 #include <algorithm>
-#include <stdlib.h>
 #include "estudiante.h"
 #include "estudiante.cpp"
 
@@ -28,8 +27,7 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
     string linea;
     char delimitador = ';';
     if(archivo.is_open()){
-        cout<<"Se abrio el archivo con exito!" << endl;
-        cout << "Procesando datos del archivo..." << endl;
+        cout<<"Se abrio el archivo con exito!"<<endl;
         while(getline(archivo, linea)){
             stringstream stream(linea);
             //variables para almacenar datos del archivo
@@ -78,15 +76,12 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
         }
         archivo.close();
     }
-    else{
-        cout<<"¡Ups!, no se encontro un archivo valido en la ruta indicada :c" << endl;
-        exit(0);
-        }
+    else{cout<<"¡Ups!, el archivo no se abrio :c";}
     return lista;
 }
 //Funcion que ordena los mejores promedios generales de mayor a menor.
+/*
 vector<estudiante> ordenar_mejores(vector<estudiante> lista){
-    cout << "Ordenando los mejores promedios generales..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++){
@@ -100,11 +95,63 @@ vector<estudiante> ordenar_mejores(vector<estudiante> lista){
         }
     }
     return lista;
-};
+};*/
+vector<estudiante> ordenar (vector<estudiante> lista, int ind_izq, int ind_der)
+{
+  int i, j; /* variables indice del vector */
+  float elem; /* contiene un elemento del vector */
+  i = ind_izq;
+  j = ind_der;
+  elem = lista[(ind_izq+ind_der)/2].getProm_gral();
+  do
+  {while (lista[i].getProm_gral() < elem){i++;} //recorrido del vector hacia la derecha
+   while (elem < lista[j].getProm_gral()){j--;} // recorrido del vector hacia la izquierda
+   if (i <= j) /* intercambiar */
+   { vector<estudiante> aux; /* variable auxiliar */
+     aux.push_back( lista[i]);
+     lista[i] = lista[j];
+     lista[j] = aux[0];
+     i++;
+     j--;
+     aux.pop_back();
+   }
+  } while (i <= j);{
+  if (ind_izq < j) {ordenar (lista, ind_izq, j);} //Llamadas recursivas
+  if (i < ind_der) {ordenar (lista, i, ind_der);}
+  }
+  return lista;
+}
 
+vector<int> ordenar1 (vector<int> vect, int ind_izq, int ind_der)
+{
+  int i, j; /* variables indice del vector */
+  int elem; /* contiene un elemento del vector */
+  i = ind_izq;
+  j = ind_der;
+  elem = vect[(ind_izq+ind_der)/2];
+  do
+  {while (vect[i] < elem){ //recorrido del vector hacia la derecha
+    i++;}
+   while (elem < vect[j]){ // recorrido del vector hacia la izquierda
+    j--;}
+   if (i <= j) /* intercambiar */
+   { vector<int> aux; /* variable auxiliar */
+     aux.push_back( vect[i]);
+     vect[i] = vect[j];
+     vect[j] = aux[0];
+     i++;
+     j--;
+     aux.pop_back();
+   }
+  } while (i <= j);{
+  if (ind_izq < j) {ordenar1 (vect, ind_izq, j);} //Llamadas recursivas
+  if (i < ind_der) {ordenar1 (vect, i, ind_der);}
+  }
+  return vect;
+}
+/*
 //Funcion que ordena los mejores promedios Artisticos de mayor a menor.
 vector<estudiante> ordenar_artistico(vector<estudiante> lista){
-    cout << "Ordenando los mejores promedios artisticos..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++) {
@@ -124,7 +171,6 @@ vector<estudiante> ordenar_artistico(vector<estudiante> lista){
 
 //Funcion que ordena los mejores promedios Humanistas de mayor a menor.
 vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
-    cout << "Ordenando los mejores promedios humanistas..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++){
@@ -144,7 +190,6 @@ vector<estudiante> ordenar_humanismo(vector<estudiante> lista){
 
 //Funcion que ordena los mejores promedios Tecnicos de mayor a menor.
 vector<estudiante> ordenar_tecnicos(vector<estudiante> lista){
-    cout << "Ordenando los mejores promedios tecnicos..." << endl;
     vector<estudiante> aux;
     int tamano_lista = lista.size();
     for(int i = 0; i < tamano_lista; i++){
@@ -161,7 +206,7 @@ vector<estudiante> ordenar_tecnicos(vector<estudiante> lista){
     }
     return lista;
 }
-
+*/
 //Funcion que elimina los primeros 100 registros del vector estudiante.
 vector<estudiante> limpiar(vector<estudiante> lista){
     lista.erase(lista.begin(),lista.begin()+99);
@@ -181,10 +226,12 @@ string limpiar_ruta(string ruta){
 //Funcion para generar el archivo con los 100 mejores promedios generales.
 void crear_mejores(vector<estudiante> lista, string ruta){
     ofstream archivo;
+    int aux;
     ruta.append("maximos.csv");
     cout << "Generando archivo: maximos.csv, en la ruta: " << ruta << endl;
     archivo.open(ruta);
-    for(int i = 0; i < 100 ; i++){
+    aux=lista.size()-1;
+    for(int i = aux; i > (aux-100) ; i--){
         archivo<<lista[i].getId()<<";"<<lista[i].getNombre()<<";"<<lista[i].getProm_gral()<<endl;
     }
     archivo.close();
