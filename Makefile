@@ -1,8 +1,17 @@
-estudiante.o: estudiante.h estudiante.cpp
-	g++ -Wall -g3 -c estudiante.h
+CXX=g++
+CXXFLAGS=-Wall -g3
+LDFLAGS=-lm
+OBJECTS=funciones.o estudiante.o
 
-funciones.o: funciones.h
-	g++ -Wall -g3 -c funciones.h
-	
-main: main.cpp funciones.o
-	g++ -Wall -g3 -o main main.cpp -lm
+main: main.cpp $(OBJECTS)
+	$(CXX) $(CXXFLAGS) -o main main.cpp $(OBJECTS) $(LDFLAGS)
+
+estudiante.o: estudiante.h estudiante.cpp
+	$(CXX) $(CXXFLAGS) -c estudiante.cpp
+
+funciones.o: funciones.h funciones.cpp
+	$(CXX) $(CXXFLAGS) -c funciones.cpp
+
+.PHONY: clean
+clean:
+	rm -fr *.0 main

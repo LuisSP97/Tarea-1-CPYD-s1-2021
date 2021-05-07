@@ -1,11 +1,13 @@
-//
-// Created by Luis Salinas on 24-04-21.
-//
-#include <string>
-#include <utility>
-
 #ifndef CODIGO_ESTUDIANTE_H
 #define CODIGO_ESTUDIANTE_H
+
+#include <iostream>
+#include <sstream>
+#include <fstream>
+#include <algorithm>
+#include <string>
+#include <utility>
+#include <vector>
 
 using namespace std;
 
@@ -38,7 +40,6 @@ public:
     const float getProm_arte(){return prom_arte;}
     const float getProm_edfis(){return prom_edfis;}
     const float getProm_gral(){return prom_gral;}
-    //Funciones
 private:
     int id;
     string nombre;
@@ -52,6 +53,13 @@ private:
     float prom_edfis;
     float prom_gral;
 };
+
+float calc_gral(float leng, float ing, float mat, float cien, float hist, float tecn, float arte, float edfis);
+vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta);
+vector<estudiante> ordenar_mejores(vector<estudiante> lista);
+vector<estudiante> ordenar_artistico(vector<estudiante> lista);
+vector<estudiante> ordenar_humanismo(vector<estudiante> lista);
+vector<estudiante> ordenar_tecnicos(vector<estudiante> lista);
 
 
 #endif //CODIGO_ESTUDIANTE_H
