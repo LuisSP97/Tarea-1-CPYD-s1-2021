@@ -93,7 +93,7 @@ vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta){
 
 //Funcion que elimina 100 ultimos registros del vector estudiante.
 vector<estudiante> limpiar(vector<estudiante> lista){
-    for(int i = 0; i > 100; i++){
+    for(int i = 0; i < 100; i++){
         lista.pop_back();
     }
     return lista;
