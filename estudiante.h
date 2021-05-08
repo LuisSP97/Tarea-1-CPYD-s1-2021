@@ -1,10 +1,6 @@
 #ifndef CODIGO_ESTUDIANTE_H
 #define CODIGO_ESTUDIANTE_H
 
-#include <iostream>
-#include <sstream>
-#include <fstream>
-#include <algorithm>
 #include <string>
 #include <utility>
 #include <vector>
@@ -15,7 +11,7 @@ class estudiante {
 
 public:
     //Constructor
-    estudiante(int id, string nombre, float prom_leng, float prom_ing, float prom_mat, float prom_cien, float prom_hist, float prom_tecn, float prom_arte, float prom_edfis, float prom_gral) {}
+    estudiante(int id, string nombre, float prom_leng, float prom_ing, float prom_mat, float prom_cien, float prom_hist, float prom_tecn, float prom_arte, float prom_edfis, float prom_gral,float prom_artistico,float prom_humanista,float prom_tecnico) {}
     //Metodos set
     void setId(int num){id = num;}
     void setNombre(string name){nombre = name;}
@@ -28,6 +24,9 @@ public:
     void setProm_arte(float arte){prom_arte = arte;}
     void setProm_edfis(float edfis){prom_edfis = edfis;}
     void setProm_gral(float gral){prom_gral = gral;}
+    void setProm_artistico(float artistico){prom_artistico = artistico;}
+    void setProm_humanista(float humanista){prom_humanista = humanista;}
+    void setProm_tecnico(float tecnico){prom_tecnico = tecnico;}
     //Metodos get
     const int getId(){return id;}
     const string getNombre(){return nombre;}
@@ -40,6 +39,9 @@ public:
     const float getProm_arte(){return prom_arte;}
     const float getProm_edfis(){return prom_edfis;}
     const float getProm_gral(){return prom_gral;}
+    const float getProm_artistico(){return prom_artistico;}
+    const float getProm_humanista(){return prom_humanista;}
+    const float getProm_tecnico(){return prom_tecnico;}
 private:
     int id;
     string nombre;
@@ -52,14 +54,18 @@ private:
     float prom_arte;
     float prom_edfis;
     float prom_gral;
+    float prom_artistico;
+    float prom_humanista;
+    float prom_tecnico;
 };
 
-float calc_gral(float leng, float ing, float mat, float cien, float hist, float tecn, float arte, float edfis);
-vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta);
-vector<estudiante> ordenar_mejores(vector<estudiante> lista);
-vector<estudiante> ordenar_artistico(vector<estudiante> lista);
-vector<estudiante> ordenar_humanismo(vector<estudiante> lista);
-vector<estudiante> ordenar_tecnicos(vector<estudiante> lista);
-
+int partitionGral(vector<estudiante> &values, int left, int right);
+void quicksortGral(vector<estudiante> &values, int left, int right);
+int partitionArt(vector<estudiante> &values, int left, int right);
+void quicksortArt(vector<estudiante> &values, int left, int right);
+int partitionHum(vector<estudiante> &values, int left, int right);
+void quicksortHum(vector<estudiante> &values, int left, int right);
+int partitionTec(vector<estudiante> &values, int left, int right);
+void quicksortTec(vector<estudiante> &values, int left, int right);
 
 #endif //CODIGO_ESTUDIANTE_H
