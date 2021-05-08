@@ -16,7 +16,7 @@ float calc_artistico(float arte, float edfis);
 float calc_humanista(float leng, float hist);
 float calc_tecnico(float mat, float cien,float tecn);
 vector<estudiante> procesar_archivo(vector<estudiante> lista, string ruta);
-void limpiar(vector<estudiante> lista);
+vector<estudiante> limpiar(vector<estudiante> lista);
 string limpiar_ruta(string ruta);
 bool validar_formato(string ruta, bool isCSV);
 void crear_mejores(vector<estudiante> lista, string ruta);

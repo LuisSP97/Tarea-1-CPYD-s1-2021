@@ -40,7 +40,7 @@ int main(int argc, char *argv[]) {
             crear_mejores(lista, ruta);
 
             //Se limpian los 100 primeros datos (0 al 99).
-            limpiar(lista);
+            lista = limpiar(lista);
 
             //Se ordenan los datos de menor a mayor, segun el promedio de las notas de Arte y Ed. Fisica.
             auxizq=0;
@@ -51,7 +51,7 @@ int main(int argc, char *argv[]) {
             crear_artistico(lista, ruta);
 
             //Se limpian los 100 primeros datos (0 al 99).
-            limpiar(lista);
+            lista = limpiar(lista);
 
             //Se ordenan los datos de menor a mayor, segun el promedio de las notas de Lengua e Historia.
             auxizq=0;
@@ -62,7 +62,7 @@ int main(int argc, char *argv[]) {
             crear_humanismo(lista, ruta);
 
             //Se limpian los 100 primeros datos (0 al 99).
-            limpiar(lista);
+            lista = limpiar(lista);
 
             //Se ordenan los datos de menor a mayor, segun el promedio de las notas de Tecnologia, Matematica y Ciencias naturales.
             auxizq=0;
