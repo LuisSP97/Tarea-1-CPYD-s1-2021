@@ -96,6 +96,7 @@ vector<estudiante> limpiar(vector<estudiante> lista){
     for(int i = 0; i > 100; i++){
         lista.pop_back();
     }
+    return lista;
 }
 
 //Funcion para eliminar "estudiantes.csv" de la ruta.
